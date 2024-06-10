@@ -22,15 +22,15 @@ app.use(cors())
 connectDB();
 
 // api endpoints
-app.use("/api/food",foodRouter)
+// app.use("/api/food",foodRouter)
 
 //app.use("/images",express.static('uploads'))  //folder name :uploads
 
-app.use("/api/user",userRouter)
+// app.use("/api/user",userRouter)
 
-app.use("/api/cart",cartRouter)
+// app.use("/api/cart",cartRouter)
 
-app.use("/api/order",orderRouter)
+// app.use("/api/order",orderRouter)
 
 app.get("/",(req,res)=>{
     res.send("API is working")
