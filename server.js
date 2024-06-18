@@ -21,16 +21,16 @@ app.use(cors())
 //db connection
 connectDB();
 
-// api endpoints
-// app.use("/api/food",foodRouter)
+api endpoints
+app.use("/api/food",foodRouter)
 
-//app.use("/images",express.static('uploads'))  //folder name :uploads
+app.use("/images",express.static('uploads'))  //folder name :uploads
 
-// app.use("/api/user",userRouter)
+app.use("/api/user",userRouter)
 
-// app.use("/api/cart",cartRouter)
+app.use("/api/cart",cartRouter)
 
-// app.use("/api/order",orderRouter)
+app.use("/api/order",orderRouter)
 
 app.get("/",(req,res)=>{
     res.send("API is working")
@@ -40,4 +40,3 @@ app.listen(port,()=>{
     console.log(`Sever started on http://localhost:${port}`)
 })
 
-//mongodb+srv://TejaThondrothuStack:12561256@cluster0.jrlkptp.mongodb.net/?
